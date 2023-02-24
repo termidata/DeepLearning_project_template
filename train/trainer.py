@@ -1,3 +1,9 @@
+import numpy as np
+import torch
+from torch import nn
+import torch.optim as optim
+import os
+
 class Trainer(object):
     
     def __init__(self, dataset, base_model, config):

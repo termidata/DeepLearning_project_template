@@ -1,3 +1,10 @@
+import os
+import torch
+from torchvision import transforms
+import pandas as pd
+from PIL import Image
+
+
 # 1. 해당 폴더 안의 데이터 파일 경로를 리스트에 담아두는 과정 필요
 def make_file_list():
     train_img_list = list()

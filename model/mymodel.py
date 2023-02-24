@@ -6,7 +6,7 @@ class MyModel(nn.Module):
     def __init__(self, base_model):
         super(MyModel, self).__init__()
         self.model_dict = {"my_model_class_1": models.resnet50(pretrained=False),
-                           "my_model_class_2": models.resnet152(pretraind=Flase)}
+                           "my_model_class_2": models.resnet152(pretraind=False)}
         
         mymodel = self._get_basemodel(base_model)
         self.features = nn.Sequential(*list(mymodel.children()))[:-1]
